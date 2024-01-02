@@ -1,0 +1,87 @@
+html,
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  font-size: 1vmax;
+  overflow: hidden;
+}
+
+#santa {
+  position: absolute;
+  animation: fly 30s linear infinite;
+  width: 300px;
+  z-index: 100;
+}
+
+@keyframes fly {
+  0% {
+    transform: rotateZ(0deg) translate(-75vw, -30vh);
+  }
+  100% {
+    transform: rotateZ(90deg) translate(500vw, -30vh);
+  }
+}
+
+#scene {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.background {
+  margin-left: -10vw;
+  margin-top: -10vh;
+  width: 120vw;
+}
+.background img {
+  height: 100vh;
+  width: 100%;
+}
+
+.snow {
+  width: 120vw;
+}
+.snow > * {
+  margin-left: -20vw;
+  transform: scale(2);
+}
+.snow.back {
+  margin-top: 80vh;
+}
+.snow.front {
+  margin-top: 73vh;
+}
+.snow img {
+  height: 20vh;
+  width: 60vw;
+}
+#snow-reverse {
+  transform: scale(-2, 2);
+}
+
+.tree-container {
+  position: absolute;
+}
+
+#tree {
+  height: 60vh;
+  width: 30vw;
+  margin-top: 40vh;
+  margin-left: 35vw;
+}
+
+#cat {
+  height: 18vh;
+  width: 11.5vw;
+  margin-top: 80vh;
+  margin-left: 55vw;
+}
